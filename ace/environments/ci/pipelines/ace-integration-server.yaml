@@ -186,7 +186,7 @@ spec:
         kind: Task
         name: build-integration-server
       workspaces:
-        - name: workspace
+        - name: input
           workspace: shared-workspace
         - name: ssh-directory
           workspace: gitops-repo-secret
