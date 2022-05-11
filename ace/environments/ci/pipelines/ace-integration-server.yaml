@@ -114,8 +114,6 @@ spec:
         value: is-source
       - name: is-application-name
         value: $(tasks.resolve-props.results.is-application-name)
-      - name: is-project
-        value: $(tasks.resolve-props.results.is-project)
       runAfter:
         - resolve-props
       taskRef:
@@ -212,3 +210,4 @@ spec:
           value: $(params.github-pr-body)
         - name: GITHUB_TOKEN_SECRET_NAME
           value: $(params.github-pr-token-secret-name)
+          
