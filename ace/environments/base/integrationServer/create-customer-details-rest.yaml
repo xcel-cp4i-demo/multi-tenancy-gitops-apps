@@ -19,8 +19,10 @@ spec:
   pod:
     containers:
       runtime:
-        image: image-registry.openshift-image-registry.svc:5000/ci/create-customer-details-rest:5ea9af816e1d6ca62668f5552c33ae8f72185338
+        image: image-registry.openshift-image-registry.svc:5000/ci/create-customer-details-rest:f45662ea44039d754a91cca110324999363574b7
         imagePullPolicy: Always
   configurations:
     - create-customer-serverconf.yaml
     - create-customer-policy
+    - es-cert.jks
+    - xcel-credentials
